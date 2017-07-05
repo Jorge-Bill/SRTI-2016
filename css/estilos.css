@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+body {
+    padding-top: 50px;
+    background-image: url(noise.png);
+    background-color: #f8f8ff;
+  /*  background-image: url(../imagens/pattern-noise.png); */
+
+}
+
+.link-invisivel {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+/* importação das fonts inicio */
+
+@font-face{
+    font-family:"Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+}
+
+@font-face{
+
+    font-family:"Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+/* importação das fonts fim */
+
+/* importação dos icons inicio */
+@font-face {
+    font-family: "SocialSRTI";
+    src:    url(../fonts/SocialSRTI.eot);
+    src:    url(../fonts/SocialSRTI.eot) format("embedded-opentype"),
+        	url(../fonts/SocialSRTI.ttf) format("truetype"),
+        	url(../fonts/SocialSRTI.woff) format("woff"),
+        	url(../fonts/SocialSRTI.svg) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'SocialSRTI' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-up:before {
+    content: "\e900";
+}
+.icon-google-plus:before {
+    content: "\e901";
+}
+.icon-google-plus2:before {
+    content: "\e902";
+}
+.icon-facebook:before {
+    content: "\e903";
+}
+.icon-facebook2:before {
+    content: "\e904";
+}
+.icon-twitter:before {
+    content: "\e905";
+}
+.icon-linkedin:before {
+    content: "\e906";
+}
+.icon-linkedin2:before {
+    content: "\e907";
+}
+/* importação dos icons fim */
+
+/* customização do navbar inicio*/
+
+.navbar-inverse {
+    /*    background-color: #3498db;*/
+    background-color: #4C4C4C;
+   	font-family:Montserrat-Bold;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #00ABDE;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    /*    color: #fff;*/
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: .1em;
+}
+
+/* customização do navbar fim */
+
+/* incio estilo base */
+
+h1 {
+    text-transform: uppercase;
+    font-family:Montserrat-Bold;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+
+    display: block;
+   /*text-shadow: 1px 1px #101010; */
+    opacity: 1;
+}
+
+h2 {
+
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-weight: 300;
+    font-size: 2em;
+    font-family: Montserrat-Bold;
+	text-transform: uppercase;
+	color: #4C4C4C;
+}
+
+h3 {
+    font-weight: 200;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+
+}
+
+/* fim estilo base */
+
+#home {
+    background: url(../imagens/fundoMod.png) no-repeat center fixed;
+   /* opacity: 0.8;*/
+    display: inline-block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-color: 0 0 3px rgba(0,0,0,0.2);
+    padding-bottom: 4em;
+}
+
+#home .texto{
+/*	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	background-color:0 0 3px rgba(0,0,0,0.9); */
+	text-align: center;
+}
+
+#home h1{
+	padding-top: 2em; /*6em */
+	color: #06A4D3;
+	text-shadow: 1px 1px #101010;
+	line-height: 1.5em;
+}
+
+#home h2{
+	color: #4C4C4C;
+	text-shadow: 1px 1px #101010;
+}
+
+#home h3{
+	color: #4C4C4C;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+/*fim home*/
+
+/* produtos inicio */
+
+#produtos .thumbnail{
+	background-color: #F7F7F7;
+/*	width: 16.250em;
+	height: 22.125em; */
+}
+
+#produtos .thumbnail .caption{
+	background-color: #EAEAEA;
+}
+
+#produtos h3{
+	line-height: 1.938em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #00ABDE;
+}
+
+#produtos .ProdSec{
+	color: #3055AB;
+}
+
+#produtos .ProdEcommerce{
+	color: #41315E;
+}
+
+#produtos .ProdSites{
+	color: #E7252E;
+}
+
+#produtos .ProdSic{
+	color: #02AE7A;
+}
+
+#produtos a:hover{
+	color: #00ABDE;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+/* produtos fim */
+
+/*inicio sobre*/
+#sobre{
+    background: url(../imagens/sobre.png) no-repeat center fixed;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-color: #00ABDE;
+}
+
+}
+
+#sobre h1 {
+	    font-family: Montserrat-Bold;
+	    text-transform: uppercase;
+	    color: #fff;
+	    font-weight: 400;
+	    font-size: 2.750em;
+	    line-height: 1.5em;
+
+
+}
+
+
+#sobre h3 {
+	    color: #101010;
+	    font-family: Montserrat-Bold;
+	    line-height: 1.4em;
+	    letter-spacing: .1em;
+	    text-transform: uppercase;
+	    border-bottom: 4px;
+	    border-bottom-style: solid ;
+	    border-bottom-width: 400;
+	    border-bottom-color: #fff;
+}
+
+#sobre p {
+    line-height: 1.6em;
+    color: #DEDEDE;
+    font-size: 1.3em;
+    font-weight: 200;
+    font-family: Montserrat-Regular;
+    /*    padding-left: 1em;*/
+}
+/*
+#sobre p + p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+*/
+
+#sobre b{
+	color:#101010;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/*#sobre strong{
+	color: #fff;
+	letter-spacing: .1em;
+}*/
+
+#sobre .srti{
+	color: #fff;
+
+}
+
+#sobre .titulo{
+padding-top: 30em;
+/*margin-bottom: 5em;*/
+}
+
+#sobre .conteudo{
+	background-color: rgba(48, 109, 159, 0.33);
+}
+
+#sobre .missao{
+height: 30em;
+}
+
+/*fim sobre */
+
+/* produtos completo inicio */
+
+/* inicio layout base */
+
+#produtos-comp strong{
+	font-size: 1.5em;
+	letter-spacing: .1em;
+}
+
+#produtos-comp .thumbnail{
+	background-color: #F7F7F7;
+}
+
+#produtos-comp .caption{
+	background-color: #F7F7F7;
+	line-height: 1.6em;
+}
+
+.img-produtos-comp{
+	padding-top: 7em;
+}
+
+/* fim layout base */
+
+/* inicio layout sec */
+
+#sec h3 {
+	    color: #3055AB;
+	    font-family: Montserrat-Bold;
+	    text-transform: uppercase;
+	    letter-spacing: .1em;
+	    font-weight: 300;
+	    border-bottom: 4px;
+	    border-bottom-style: solid ;
+	    border-bottom-width: 400;
+	    border-bottom-color: #4C4C4C;
+}
+
+#sec p{
+	line-height: 1.4em;
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+#sec ul li{
+	line-height: 1.7em;
+	font-weight: 200;
+	letter-spacing: .1em;
+	list-style-type: square;
+
+}
+
+/* fim layout sec */
+
+/* inicio layout ecommerce */
+#ecommerce h3 {
+	    color: #41315e;
+	    font-family: Montserrat-Bold;
+	    text-transform: uppercase;
+	    letter-spacing: .1em;
+	    font-weight: 300;
+	   border-bottom: 4px;
+	    border-bottom-style: solid ;
+	    border-bottom-width: 400;
+	    border-bottom-color: #4C4C4C;
+}
+
+#ecommerce p{
+	line-height: 1.4em;
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+#ecommerce ul li{
+	line-height: 1.7em;
+	font-weight: 200;
+	letter-spacing: .1em;
+	list-style-type: square;
+
+}
+
+#ecommerce strong{
+	color: #41315e;
+}
+
+/* fim layout ecommerce */
+
+/* inicio layout sites */
+#sites h3 {
+	    color: #e7252e;
+	    font-family: Montserrat-Bold;
+	    text-transform: uppercase;
+	    letter-spacing: .1em;
+	    font-weight: 300;
+	   border-bottom: 4px;
+	    border-bottom-style: solid ;
+	    border-bottom-width: 400;
+	    border-bottom-color: #4C4C4C;
+}
+
+#sites p{
+	line-height: 1.4em;
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+#sites ul li{
+	line-height: 1.7em;
+	font-weight: 200;
+	letter-spacing: .1em;
+	list-style-type: square;
+
+}
+
+#sites strong{
+	color: #e7252e;
+}
+
+/* fim layout sites*/
+
+/* inicio layout sic */
+#sic h3 {
+	    color: #02ae7a;
+	    font-family: Montserrat-Bold;
+	    text-transform: uppercase;
+	    letter-spacing: .1em;
+	    font-weight: 300;
+	   border-bottom: 4px;
+	    border-bottom-style: solid ;
+	    border-bottom-width: 400;
+	    border-bottom-color: #4C4C4C;
+}
+
+#sic p{
+	line-height: 1.4em;
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+#sic ul li{
+	line-height: 1.7em;
+	font-weight: 200;
+	letter-spacing: .1em;
+	list-style-type: square;
+
+}
+
+/* fim layout sic*/
+
+
+/* produtos completo fim */
+
+/* contato inicio*/
+/*#contato{
+	background: url(../imagens/) no-repeat center fixed;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-color: #00ABDE;
+}*/
+
+#contato h2{
+	text-transform: uppercase;
+}
+
+#contato label{
+	text-transform: uppercase;
+	color: #4C4C4C;
+	font-family: Montserrat-Bold;
+}
+
+#contato input{
+	font-family: Montserrat-Regular;
+}
+
+.btn-primary{
+    background-color: #00ABDE;
+  /*  border-radius: 15px;*/
+    text-transform: uppercase;
+    border-color:#4C4C4C;
+    font-family: Montserrat-Regular;
+ }
+
+.btn-primary:hover{
+	background-color:#4C4C4C;
+	border-color: #00ABDE;
+}
+
+/* contato fim */
+
+
+/*footer inicio */
+
+footer {
+    clear: both;
+    background-color:#4C4C4C; /*  #27272F;*/
+    padding: 2em;
+}
+
+footer h3 {
+    text-align: left;
+    padding-left: .3em;
+    color: #00ABDE;
+    text-transform: uppercase;
+    /*    text-shadow: 1px 1px #DEDEDE;*/
+}
+
+footer p {
+    font-size: 1.1em;
+    font-weight: 100;
+    line-height: 1.4em;
+    text-align: left;
+    /*    color: #f8f8ff;*/
+    color: #DEDEDE;
+    font-family: Montserrat-Regular;
+}
+
+footer span {
+    /*    color: #f8f8ff;*/
+    color: #00ABDE;
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+    font-size: 1em;
+}
+
+.social{
+	font-size: 2em;
+	color:  #DEDEDE;
+	opacity: 0.5;
+	padding-right: .1em;
+}
+
+.social:hover{
+	color: #f8f8ff;
+	opacity: 1;
+	text-decoration: none;
+}
+
+.topo .glyphicon {
+    color: #DEDEDE;
+    font-size: 3em;
+    opacity: 0.5;
+}
+
+footer .topo .glyphicon:hover {
+    color: rgba(255, 255, 255, 0.17);
+    opacity: 1;
+    text-decoration: none;
+}
+
+footer .thumbnail{
+	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	background-color:#585656;
+	border-radius: 3px;
+	height: 10em;
+	border-color: #585656;
+	margin-right: 2em;
+}
+
+footer .caption{
+	background-color:  #4C4C4C;
+	border-top: 1px;
+	border-top-style: solid ;
+	border-top-width: 400;
+	border-top-color: #00ABDE;
+ 	height: 5em;
+}
+
+/*footer fim*/
